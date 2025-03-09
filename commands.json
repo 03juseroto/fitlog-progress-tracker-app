@@ -1,0 +1,11 @@
+{
+  "commands": {
+    "start-server": "nodemon server.js",
+    "start-client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build-client": "npm run build --prefix client",
+    "install-dependencies": "npm install",
+    "install-client-dependencies": "npm install --prefix client",
+    "deploy": "git push heroku main"
+  }
+}
